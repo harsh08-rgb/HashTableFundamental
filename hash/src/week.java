@@ -8,7 +8,6 @@ public class week {
     private Map<String, Integer> attemptFrequency;
 
     private int userIdCounter = 1;
-
     public week () {
         usernameMap = new HashMap<>();
         attemptFrequency = new HashMap<>();
@@ -54,7 +53,6 @@ public class week {
 
         return mostAttempted + " (" + maxAttempts + " attempts)";
     }
-
     public static void main(String[] args) {
         week checker = new week ();
 
@@ -62,7 +60,7 @@ public class week {
 
         System.out.println(checker.checkAvailability("john_doe")); // false
         System.out.println(checker.checkAvailability("jane_smith")); // true
-
+        System.out.println(checker.checkAvailability("jane_kumar"));
         System.out.println(checker.suggestAlternatives("john_doe"));
 
         checker.checkAvailability("admin");
